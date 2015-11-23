@@ -127,5 +127,13 @@
         return this;
     };
 
+    /**
+     *
+     * @returns {undefined}
+     */
+    namespace.wizardComponent.prototype.getActive = function() {
+        return this.$element.find("> a.active:first").attr('item-id');
+    };
+
     return namespace.wizardComponent;
 })(__ARGUMENT_LIST__);
